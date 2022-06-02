@@ -1,0 +1,43 @@
+.header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #F8FF09;
+  background: #06030D;
+
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+
+  padding: 1rem 3rem;
+}
+
+.header-item {
+  width: auto;
+  flex-basis: 1;
+}
+
+.header-item:first-child {
+  flex: 1;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-item:last-child {
+  flex: 1;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-text {
+  color: white;
+  font-family: Mukta, sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}

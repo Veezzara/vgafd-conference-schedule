@@ -1,0 +1,41 @@
+.collapsible-block {
+  background: #f4f4f4;
+  --collapsible-block-padding: 0.5rem 1rem;
+}
+
+.collapsible-block-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: var(--collapsible-block-padding);
+}
+
+.collapsible-block-header-open::after {
+  content: "";
+  border-top: 0rem solid black;
+  border-bottom: 0.5rem solid black;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+
+  margin-left: 1rem;
+
+  transition: 0.1s;
+}
+
+.collapsible-block-header-collapsed::after {
+  content: "";
+  border-top: 0.5rem solid black;
+  border-bottom: 0rem solid black;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+
+  margin-left: 1rem;
+
+  transition: 0.1s;
+}
+
+.collapsible-block-content {
+  padding: var(--collapsible-block-padding);
+}

@@ -1,0 +1,32 @@
+.event-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.event-description {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-rumors-header {
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.event-rumor-body {
+  font-size: 1.5rem;
+}
+
+.event-rumor-body {
+  margin-bottom: 1rem;
+}
+
+.event-rumor-body p {
+  margin: 0;
+}

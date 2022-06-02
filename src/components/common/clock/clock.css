@@ -1,0 +1,26 @@
+.clock-container {
+  background: #f4fc70;
+  border-radius: 4rem;
+  padding: 0 2rem;
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-time-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clock-label {
+  font-weight: 500;
+  font-size: 1.5rem
+}
+
+.clock-time {
+  font-weight: 500;
+  font-size: 2rem
+}

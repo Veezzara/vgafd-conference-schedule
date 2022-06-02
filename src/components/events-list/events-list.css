@@ -1,0 +1,7 @@
+.event-list {
+  margin: 4rem auto;
+}
+
+.event-list > *:not(:last-child) {
+  margin: 2rem 0;
+}
