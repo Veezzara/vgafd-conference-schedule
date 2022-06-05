@@ -1,5 +1,6 @@
 import { Component, createRef, RefObject } from "react";
 import { EventData } from "../../api/types";
+import Bingo from "../bingo/bingo";
 import CollapsibleBlock from "../common/collapsible-block/collapsible-block";
 import "./events.css";
 
@@ -7,7 +8,7 @@ type Props = {
   event: EventData;
 };
 
-export default class Event extends Component<{ event: EventData }> {
+export default class Event extends Component<Props> {
   outerBlock: RefObject<CollapsibleBlock>;
 
   constructor(props: Props) {
@@ -54,6 +55,14 @@ function EventBody(props: BodyProps) {
   return (
     <div className="event-body">
       <div className="event-description">{props.event.description}</div>
+      {/* {props.event.bingoOptions ? (
+        // <CollapsibleBlock
+        //   header={<div className="event-rumors-header">Бинго</div>}
+        //   parentCollapsible={props.outerBlock}
+        // >
+        <Bingo bingoOptions={props.event.bingoOptions}></Bingo>
+      ) : // </CollapsibleBlock>
+      undefined} */}
       {props.event.rumors.length > 0 ? (
         <CollapsibleBlock
           header={<div className="event-rumors-header">Спойлеры и слухи</div>}

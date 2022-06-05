@@ -10,7 +10,7 @@ export default function Header() {
           <Logo />
         </div>
         <div className="header-item">
-          <div className="header-text"></div>
+          <div className="header-text">{process.env.REACT_APP_NAME}</div>
         </div>
         <div className="header-item">
           <Clock />

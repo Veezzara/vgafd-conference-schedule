@@ -1,0 +1,37 @@
+.bingo-container {
+  margin: 0 6rem 1rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: 2px solid black;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
+.bingo-option {
+cursor: pointer;
+
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  box-sizing: border-box;
+
+  transition: 0.2s;
+}
+
+.bingo-option:nth-last-child(-n+5) {
+  border-bottom: none
+}
+
+.bingo-option:nth-last-child(5n) {
+  border-left: none
+}
+
+.selected {
+  background: #F4FC70;
+  transition: 0.2s;
+}
