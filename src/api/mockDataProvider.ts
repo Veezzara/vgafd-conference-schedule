@@ -54,8 +54,7 @@ export class MockDataProvider implements DataProvider {
           id: 0,
           name: "Netflix Geeked Week Gaming",
           date: new Date("2022-06-10T17:00:00+0000"),
-          description: `Трансляция от Netflix, на которой расскажут о "Cyberpunk Edgerunners" (аниме студии Trigger)
-          и втором сезоне Arcane.`,
+          description: `Трансляция от Netflix, полностью посвященная видеоиграм.`,
           rumors: [],
           youtubeLink: "https://www.youtube.com/c/Netflix",
         },
