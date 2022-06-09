@@ -1,0 +1,23 @@
+.event-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  background: #fdff63;
+
+  width: 10rem;
+
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  margin-bottom: 00.5rem;
+}
+
+.event-link > img {
+  height: 2rem;
+  padding-right: 1rem;
+}

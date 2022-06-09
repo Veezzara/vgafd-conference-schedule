@@ -1,8 +1,10 @@
 import { Component, createRef, RefObject } from "react";
 import { EventData } from "../../api/types";
-import Bingo from "../bingo/bingo";
 import CollapsibleBlock from "../common/collapsible-block/collapsible-block";
+import EventLink from "../event-link/event-link";
 import "./events.css";
+import twitchLogo from "../../assets/TwitchGlitchBlackOps.svg"
+import ytLogo from "../../assets/yt_icon_mono_light.svg"
 
 type Props = {
   event: EventData;
@@ -55,14 +57,22 @@ function EventBody(props: BodyProps) {
   return (
     <div className="event-body">
       <div className="event-description">{props.event.description}</div>
-      {/* {props.event.bingoOptions ? (
-        // <CollapsibleBlock
-        //   header={<div className="event-rumors-header">Бинго</div>}
-        //   parentCollapsible={props.outerBlock}
-        // >
-        <Bingo bingoOptions={props.event.bingoOptions}></Bingo>
-      ) : // </CollapsibleBlock>
-      undefined} */}
+      <div className="links-container">
+        {props.event.twitchLink ? (
+          <EventLink
+            address={props.event.twitchLink}
+            text="twitch"
+            logo={twitchLogo}
+          ></EventLink>
+        ) : undefined}
+        {props.event.youtubeLink ? (
+          <EventLink
+            address={props.event.youtubeLink}
+            text="youtube"
+            logo={ytLogo}
+          ></EventLink>
+        ) : undefined}
+      </div>
       {props.event.rumors.length > 0 ? (
         <CollapsibleBlock
           header={<div className="event-rumors-header">Спойлеры и слухи</div>}

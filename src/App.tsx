@@ -11,9 +11,11 @@ function App() {
   useEffect(() => {
     async function fetchEventData() {
       const data = await dataProvider.getEventsData();
+      data.sort((a, b) => (a.date > b.date ? 1 : -1));
       setEventsData(data);
     }
     fetchEventData();
+    document.title = process.env.REACT_APP_TITLE ? process.env.REACT_APP_TITLE : '';
   }, []);
 
   return (

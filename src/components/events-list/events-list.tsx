@@ -25,14 +25,22 @@ export default function EventsList(props: Props) {
 
   function groupEvents(eventsData: EventData[]) {
     const eventDates = eventsData.map((e) => e.date);
+
     const dates: Date[] = [];
     eventDates.forEach((e) => {
-      if (!dates.find((d) => moment(e).diff(d, "days") === 0)) dates.push(e);
+      if (
+        !dates.find(
+          (d) =>
+            moment(e).startOf("day").diff(moment(d).startOf("day"), "days") ===
+            0
+        )
+      )
+        dates.push(e);
     });
 
     return dates.map((d) => {
       const events = eventsData.filter(
-        (e) => moment(e.date).diff(d, "days") === 0
+        (e) => moment(e.date).startOf("day").diff(moment(d).startOf("day"), "days") === 0
       );
       return {
         date: d,
