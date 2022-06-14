@@ -8,7 +8,7 @@ type Props = {
 
 export default function EventLink(props: Props) {
   return (
-    <a href={props.address} className="event-link">
+    <a href={props.address} className="event-link" target="_blank" rel="noreferrer">
       <img src={props.logo} alt=""></img>
       {props.text}
     </a>

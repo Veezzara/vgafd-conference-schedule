@@ -3,8 +3,9 @@ import { EventData } from "../../api/types";
 import CollapsibleBlock from "../common/collapsible-block/collapsible-block";
 import EventLink from "../event-link/event-link";
 import "./events.css";
-import twitchLogo from "../../assets/TwitchGlitchBlackOps.svg"
-import ytLogo from "../../assets/yt_icon_mono_light.svg"
+import twitchLogo from "../../assets/TwitchGlitchBlackOps.svg";
+import ytLogo from "../../assets/yt_icon_mono_light.svg";
+import Bingo from "../bingo/bingo";
 
 type Props = {
   event: EventData;
@@ -57,6 +58,9 @@ function EventBody(props: BodyProps) {
   return (
     <div className="event-body">
       <div className="event-description">{props.event.description}</div>
+      {props.event.bingoOptions ? (
+        <Bingo bingoOptions={props.event.bingoOptions}></Bingo>
+      ) : undefined}
       <div className="links-container">
         {props.event.twitchLink ? (
           <EventLink
