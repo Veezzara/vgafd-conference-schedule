@@ -1,5 +1,9 @@
 .bingo-container {
-  margin: 0 6rem 1rem 6rem;
+  padding: 1rem 0;
+}
+
+.bingo {
+  margin: 2rem 10rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -9,13 +13,16 @@
 }
 
 .bingo-option {
-cursor: pointer;
+  cursor: pointer;
 
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  text-align: center;
+
+  padding: 1rem;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   box-sizing: border-box;
@@ -23,15 +30,49 @@ cursor: pointer;
   transition: 0.2s;
 }
 
-.bingo-option:nth-last-child(-n+5) {
-  border-bottom: none
+.bingo-option:nth-last-child(-n + 5) {
+  border-bottom: none;
 }
 
 .bingo-option:nth-last-child(5n) {
-  border-left: none
+  border-left: none;
 }
 
 .selected {
-  background: #F4FC70;
+  background: #f4fc70;
   transition: 0.2s;
+}
+
+@media (max-width: 900px) {
+  .bingo {
+    margin: 2rem 0;
+  }
+
+  .bingo-option {
+    padding: 0;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem 0;
+}
+
+.download-button {
+  cursor: pointer;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+  background: #fdff63;
+
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  margin-bottom: 0.5rem;
+
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
 }
