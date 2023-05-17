@@ -225,8 +225,16 @@ export class MockDataProvider implements DataProvider {
           date: new Date("2023-08-26T15:00:00+00:00"),
           description: `Будут новые анонсы касательно Warframe и, возможно, что-нибудь интересное по Soulframe.`,
           rumors: [],
-          twitchLink: "hhttps://www.twitch.tv/warframe",
+          twitchLink: "https://www.twitch.tv/warframe",
           youtubeLink: "https://www.youtube.com/user/playwarframe",
+        },
+        {
+          id: 0,
+          name: "Warhammer Skulls",
+          date: new Date("2023-05-25T16:00:00+00:00"),
+          description: `Покажут контент по уже анонсированным играм и проектам (как минимум ожидайте Space Marines 2), а также возможно что-то новое.`,
+          rumors: [],
+          twitchLink: "https://www.twitch.tv/warhammer",
         },
         
       ];
