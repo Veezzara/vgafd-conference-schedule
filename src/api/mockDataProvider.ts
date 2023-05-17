@@ -126,7 +126,7 @@ export class MockDataProvider implements DataProvider {
           name: "PC Gaming Show",
           date: new Date("2023-06-11T20:00:00+00:00"),
           description: `Ежегодная крупная выставка, которую все смотрят из-за Фрэнки Уорд. Только в этот раз без Фрэнки, ведь ведущим в этом году будет Шон Плотт.
-          Подробностей о том, что будет на трансляции - нет.`,
+          Покажут Baldur's Gate 3, Frostpunk 2, Dune: Awakening, новую игр от Klei (Don't Starve), а также 51 игру от других разработчиков.`,
           rumors: [],
           twitchLink: "https://www.twitch.tv/pcgamer",
           youtubeLink: "https://www.youtube.com/pcgamer",
@@ -232,11 +232,20 @@ export class MockDataProvider implements DataProvider {
           id: 0,
           name: "Warhammer Skulls",
           date: new Date("2023-05-25T16:00:00+00:00"),
-          description: `Покажут контент по уже анонсированным играм и проектам (как минимум ожидайте Space Marines 2), а также возможно что-то новое.`,
+          description: `Покажут Space Marines 2, Total War Warhammer 3 (новое DLC), грядущее обновление для Darktide (возможно, вместе с консольным релизом),
+          новый геймплей Rogue Trader, а также возможно что-то новое.`,
           rumors: [],
           twitchLink: "https://www.twitch.tv/warhammer",
         },
-        
+        {
+          id: 0,
+          name: "Playstation Showcase",
+          date: new Date("2023-05-24T20:00:00+00:00"),
+          description: `Презентация будет идти более часа, где покажут игры для PS5 и PSVR 2. Внутренние студии Sony здесь также появятся.`,
+          rumors: [],
+          twitchLink: "https://www.twitch.tv/playstation",
+          youtubeLink: "https://www.youtube.com/c/playstation/videos",
+        },
       ];
       resolve(events);
     });
