@@ -1,4 +1,5 @@
 import Clock from "../common/clock/clock";
+import Logo from "../common/logo/logo"; 
 import "./header.css";
 
 export default function Header() {
@@ -6,6 +7,7 @@ export default function Header() {
     <header className="header">
       <div className="header-content">
         <div className="header-item">
+          <Logo />
         </div>
         <div className="header-item">
           <div className="header-text">{process.env.REACT_APP_NAME}</div>
