@@ -69,13 +69,23 @@ export default class CollapsibleBlock extends Component<Props> {
       return {
         height: `${this.getHeight()}px`,
         transition: "0.2s",
-        overflow: "hidden"
+        overflow: "hidden",
       };
     }
   }
 
+  resizeListener() {
+    const action = this.updateHeight.bind(this, false);
+    setTimeout(action, 200);
+  }
+
   componentDidMount() {
     this.updateHeight(false);
+    window.addEventListener("resize", () => this.resizeListener());
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", () => this.resizeListener());
   }
 
   componentDidUpdate() {

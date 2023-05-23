@@ -1,8 +1,8 @@
 .header {
   position: sticky;
   top: 0;
-  border-bottom: 1px solid #F8FF09;
-  background: #06030D;
+  border-bottom: 1px solid #f8ff09;
+  background: #06030d;
 
   text-align: center;
 }
@@ -15,20 +15,19 @@
 }
 
 .header-item {
+  flex: 2;
   width: auto;
   flex-basis: 1;
 }
 
 .header-item:first-child {
   flex: 1;
-
   display: flex;
   justify-content: flex-start;
 }
 
 .header-item:last-child {
   flex: 1;
-
   display: flex;
   justify-content: flex-end;
 }
@@ -37,7 +36,26 @@
   color: white;
   font-family: Mukta, sans-serif;
   font-weight: 400;
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .header-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-item:first-child {
+    display: none;
+  }
+
+  .header-item:last-child {
+    display: none;
+  }
+
+  .header-text {
+    font-size: 2rem;
+  }
 }

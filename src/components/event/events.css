@@ -5,11 +5,11 @@
   justify-content: space-between;
 
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .event-description {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-bottom: 1rem;
 }
 
