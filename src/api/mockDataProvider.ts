@@ -158,15 +158,6 @@ export class MockDataProvider implements DataProvider {
         },
         {
           id: 0,
-          name: "INDIE Live Expo",
-          date: new Date("2023-05-20T10:00:00+00:00"),
-          description: `Небольшая презентация о инди-играх из Японии и не только.`,
-          rumors: [],
-          twitchLink: "https://www.twitch.tv/indie_live_expo_en",
-          youtubeLink: "https://www.youtube.com/@indieliveexpo/videos"
-        },
-        {
-          id: 0,
           name: "Xbox Games Showcase Extended",
           date: new Date("2023-06-13T17:00:00+00:00"),
           description: `"Расширенная" игровая презентация от Microsoft, где нам расскажут более подробно о играх, показанных на их прошлой презентации.`,
