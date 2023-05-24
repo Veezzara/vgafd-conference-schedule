@@ -15,7 +15,9 @@ function App() {
       setEventsData(data);
     }
     fetchEventData();
-    document.title = process.env.REACT_APP_TITLE ? process.env.REACT_APP_TITLE : '';
+    document.title = process.env.REACT_APP_TITLE
+      ? process.env.REACT_APP_TITLE
+      : "";
   }, []);
 
   return (

@@ -1,5 +1,5 @@
 import Clock from "../common/clock/clock";
-import Logo from "../common/logo/logo";
+import Logo from "../common/logo/logo"; 
 import "./header.css";
 
 export default function Header() {

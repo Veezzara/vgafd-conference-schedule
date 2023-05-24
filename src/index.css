@@ -5,21 +5,15 @@
   --content-width: 120ch;
 }
 
-@media (max-width: 1800px) {
-  html {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   html {
     font-size: 0.5rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 769px) {
   html {
-    font-size: 0.25rem;
+    font-size: 0.75rem;
   }
 }
 
