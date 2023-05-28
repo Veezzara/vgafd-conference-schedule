@@ -219,6 +219,15 @@ export class MockDataProvider implements DataProvider {
           twitchLink: "https://www.twitch.tv/warframe",
           youtubeLink: "https://www.youtube.com/user/playwarframe",
         },
+        {
+          id: 0,
+          name: "RGG Summit",
+          date: new Date("2023-06-16T03:00:00+00:00"),
+          description: `Команда поделится информацией о своих грядущих играх или анонсирует проекты, о которых прежде не рассказывала. Стоит ожидать больше информации о Like a Dragon 8.`,
+          rumors: [],
+          twitchLink: "https://www.twitch.tv/warframe",
+          youtubeLink: "https://www.youtube.com/user/playwarframe",
+        },
       ];
       resolve(events);
     });
