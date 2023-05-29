@@ -98,7 +98,7 @@ export class MockDataProvider implements DataProvider {
             "Геймплей Contraband",
             "Куча CGI-трейлеров без даты релиза",
             "ONE MORE GAME...",
-            "Cyberpunk DLC с датой релиза",
+            "Age of Mythology Retold",
             "МАЙНКРАФТ ЭТО МОЯ ЖИЗНЬ",
             "Анонс новой игры inXile",
             "Новый трейлер DLC для TESO/F76",
