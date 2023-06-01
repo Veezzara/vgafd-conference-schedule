@@ -4,87 +4,6 @@ export class MockDataProvider implements DataProvider {
   getEventsData(): Promise<EventData[]> {
     return new Promise((resolve, reject) => {
       const events: EventData[] = [
-        // {
-        //   id: 0,
-        //   name: "UploadVR Showcase",
-        //   date: new Date("2022-06-09T15:00:00+00:00"),
-        //   description: `Стрим, посвященный новым VR-играм.`,
-        //   rumors: [],
-        //   youtubeLink: "https://www.youtube.com/c/Uploadvr",
-        // },
-        // {
-        //   id: 0,
-        //   name: "Summer Game Fest",
-        //   date: new Date("2022-06-09T18:00:00+00:00"),
-        //   description: `Открытие Summer Game Fest. Джефф Кейли вновь открывает свою презентацию
-        //   с огромной кучей разработчиков и крупных издателей. Стоит ожидать ребут Saints Row, 
-        //   The Callisto Protocol и дополнение для Cuphead. `,
-        //   rumors: [
-        //     {
-        //       source:
-        //         "https://twitter.com/griffinmatta/status/1533723063451361280?s=20&t=TgYFYtRNPeAaY5LWqRFSrA",
-        //       description: `О своём участии на SGF сказал PR-директор Team Cherry, которая в данный момент работает
-        //       над Hollow Knight: Silksong.`,
-        //     },
-        //     {
-        //       source: "https://vk.com/wall-102576019_227381",
-        //       description: `Redfall и Starfield мелькали в промо SGF, так что стоит ожидать эти игры и тут.`,
-        //     },
-        //   ],
-        //   twitchLink: "https://www.twitch.tv/thegameawards",
-        // },
-        // {
-        //   id: 0,
-        //   name: "Devolver Digital Countdown to Marketing",
-        //   date: new Date("2022-06-09T22:00:00+00:00"),
-        //   description: `Презентация от Деволверов, в которой примет участие Suda51.`,
-        //   rumors: [],
-        //   twitchLink: "https://www.twitch.tv/devolverdigital",
-        // },
-        // {
-        //   id: 0,
-        //   name: "IGN Expo",
-        //   date: new Date("2022-06-10T16:00:00+00:00"),
-        //   description: `Презентация от игрового портала IGN, на котором покажут геймплей и анонсы игр.`,
-        //   rumors: [],
-        //   twitchLink: "https://www.twitch.tv/ign",
-        //   youtubeLink: "https://www.youtube.com/c/IGN",
-        // },
-        // {
-        //   id: 0,
-        //   name: "Netflix Geeked Week Gaming",
-        //   date: new Date("2022-06-10T17:00:00+00:00"),
-        //   description: `Трансляция от Netflix, полностью посвященная видеоиграм.`,
-        //   rumors: [],
-        //   youtubeLink: "https://www.youtube.com/c/Netflix",
-        // },
-
-        // {
-        //   id: 0,
-        //   name: "Guerrilla Collective Showcase 3",
-        //   date: new Date("2022-06-11T15:00:00+00:00"),
-        //   description: `Выставка, посвященная инди-играм — с запуском геймплейных демо в Steam, анонсами и трейлерами.`,
-        //   rumors: [],
-        //   twitchLink: "https://www.twitch.tv/guerrillacollective",
-        //   youtubeLink: "https://www.youtube.com/c/GuerrillaCollective/",
-        // },
-        // {
-        //   id: 0,
-        //   name: "Wholesome Games Direct",
-        //   date: new Date("2022-06-11T16:30:00+00:00"),
-        //   description: `Ещё одна презентация, полностью посвященная инди, на которой обещают показать более 100 игр.`,
-        //   rumors: [],
-        //   youtubeLink: "https://www.youtube.com/c/WholesomeGames",
-        // },
-        // {
-        //   id: 0,
-        //   name: "Future Games Show",
-        //   date: new Date("2022-06-11T19:00:00+00:00"),
-        //   description: `Трансляция от издания GamesRadar+ с трейлерами грядущих игр.`,
-        //   rumors: [],
-        //   twitchLink: "https://www.twitch.tv/gamesradar",
-        //   youtubeLink: "https://www.youtube.com/user/GamesRadar",
-        // },
         {
           id: 0,
           name: "Xbox & Bethesda Games Showcase",
@@ -118,7 +37,7 @@ export class MockDataProvider implements DataProvider {
             "Новая игра Compulsion Games",
             "Forza Motorsport с датой релиза",
             "State of Decay 3",
-            "\"Доступно уже сейчаc\"",
+            '"Доступно уже сейчаc"',
           ],
         },
         {
@@ -131,22 +50,6 @@ export class MockDataProvider implements DataProvider {
           twitchLink: "https://www.twitch.tv/pcgamer",
           youtubeLink: "https://www.youtube.com/pcgamer",
         },
-        // {
-        //   id: 0,
-        //   name: "Epic Games Store Summer Showcase",
-        //   date: new Date("2022-06-10T18:00:00+00:00"),
-        //   description: `Epic Games расскажет о нескольких анонсах, включая игры и обновление своего лаунчера.`,
-        //   rumors: [],
-        //   twitchLink: "https://www.twitch.tv/epicgames",
-        // },
-        // {
-        //   id: 0,
-        //   name: "Future of Play Direct",
-        //   date: new Date("2022-06-11T17:30:00+00:00"),
-        //   description: `Шоу с показом игр от независимых разработчиков. Среди присутствующих участников - издатель Humble Games.`,
-        //   rumors: [],
-        //   youtubeLink: "https://www.youtube.com/c/heyglitch",
-        // },
         {
           id: 0,
           name: "Guerrilla Collective",
@@ -208,7 +111,8 @@ export class MockDataProvider implements DataProvider {
           description: `Вторая замена E3 после SGF начинается в конце августа и продлится с 22 по 27 число. Ожидаются как анонсы, так и показы уже анонсированных ранее игр.`,
           rumors: [],
           twitchLink: "https://www.twitch.tv/gamescom",
-          youtubeLink: "https://www.youtube.com/channel/UCHo_GVNoKNqfJx6zUGRd6YQ/videos",
+          youtubeLink:
+            "https://www.youtube.com/channel/UCHo_GVNoKNqfJx6zUGRd6YQ/videos",
         },
         {
           id: 0,
