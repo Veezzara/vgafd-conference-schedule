@@ -1,0 +1,6 @@
+#!/bin/bash
+git pull
+docker build -t vgafd-app-img .
+docker rm -f vgafd-app
+docker run -d -p 3000:80 --name vgafd-app vgafd-app-img
+docker system prune -a -f
