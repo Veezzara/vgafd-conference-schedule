@@ -143,7 +143,7 @@ export class MockDataProvider implements DataProvider {
           id: 0,
           name: "Capcom Showcase",
           date: new Date("2023-06-12T22:00:00+00:00"),
-          description: `Capcom провёдет получасовую трансляцию, на которой возможно покажут Exoprimal, Pragmata, и с ещё меньшим шансом - анонс RE9`,
+          description: `Capcom в рамках SGF провёдет получасовую трансляцию, на которой возможно покажут Exoprimal, Pragmata, и с ещё меньшим шансом - анонс RE9`,
           rumors: [],
           youtubeLink: "https://www.youtube.com/@CapcomUSA",
         },
