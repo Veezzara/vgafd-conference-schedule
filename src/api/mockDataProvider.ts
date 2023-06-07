@@ -134,7 +134,7 @@ export class MockDataProvider implements DataProvider {
         {
           id: 0,
           name: "Devolver Direct",
-          date: new Date("2023-06-09T22:00:00+00:00"),
+          date: new Date("2023-06-08T22:00:00+00:00"),
           description: `Очередная безумная-ежегодная трансляция от Devolver Digital. Не переживайте - Hotline Miami 3 не будет.`,
           rumors: [],
           youtubeLink: "https://www.youtube.com/@DevolverDigital",
