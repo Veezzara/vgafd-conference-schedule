@@ -52,15 +52,6 @@ export class MockDataProvider implements DataProvider {
         },
         {
           id: 0,
-          name: "Guerrilla Collective",
-          date: new Date("2023-06-07T16:00:00+00:00"),
-          description: `Онлайн-трансляция о инди от независимых разработчиков и издателей. Трансляция будет идти ежедневно вплоть до 12-го июня.`,
-          rumors: [],
-          twitchLink: "https://www.twitch.tv/guerrillacollective",
-          youtubeLink: "https://www.youtube.com/c/GuerrillaCollective",
-        },
-        {
-          id: 0,
           name: "Xbox Games Showcase Extended",
           date: new Date("2023-06-13T17:00:00+00:00"),
           description: `"Расширенная" игровая презентация от Microsoft, где нам расскажут более подробно о играх, показанных на их прошлой презентации.`,
@@ -146,6 +137,15 @@ export class MockDataProvider implements DataProvider {
           description: `Capcom в рамках SGF провёдет получасовую трансляцию, на которой как минимум точно покажут Dragon’s Dogma 2, Exoprimal и Ghost Trick.`,
           rumors: [],
           youtubeLink: "https://www.youtube.com/@CapcomUSA",
+        },
+        {
+          id: 0,
+          name: "Wholesome (100) Direct",
+          date: new Date("2023-06-10T16:00:00+00:00"),
+          description: `Онлайн-трансляция о инди от независимых разработчиков и издателей.`,
+          rumors: [],
+          twitchLink: "https://www.twitch.tv/wholesome_games",
+          youtubeLink: "https://www.youtube.com/channel/UCKMkV9T20tUOBqwsi5xh7HA/videos",
         },
       ];
       resolve(events);
