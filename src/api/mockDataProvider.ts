@@ -61,15 +61,6 @@ export class MockDataProvider implements DataProvider {
         },
         {
           id: 0,
-          name: "Summer Game Fest",
-          date: new Date("2023-06-08T19:00:00+00:00"),
-          description: `Джефф Кейли в очередной раз попытается сделать свою замену E3, в этот раз с ещё большим количеством различных издателей.`,
-          rumors: [],
-          twitchLink: "https://www.twitch.tv/thegameawards",
-          youtubeLink: "https://www.youtube.com/@thegameawards/videos",
-        },
-        {
-          id: 0,
           name: "Future Games Show",
           date: new Date("2023-06-10T17:00:00+00:00"),
           description: `Ежегодное мероприятие от издания Gamesradar. Анонсы, интервью с разработчиками и геймплейные кадры ожидаемых игр.`,
@@ -121,14 +112,6 @@ export class MockDataProvider implements DataProvider {
           description: `Команда поделится информацией о своих грядущих играх или анонсирует проекты, о которых прежде не рассказывала. Стоит ожидать больше информации о Like a Dragon 8.`,
           rumors: [],
           youtubeLink: "https://www.youtube.com/watch?v=UG4HE9Q3wek",
-        },
-        {
-          id: 0,
-          name: "Devolver Direct",
-          date: new Date("2023-06-08T22:00:00+00:00"),
-          description: `Очередная безумная-ежегодная трансляция от Devolver Digital. Не переживайте - Hotline Miami 3 не будет.`,
-          rumors: [],
-          youtubeLink: "https://www.youtube.com/@DevolverDigital",
         },
         {
           id: 0,
