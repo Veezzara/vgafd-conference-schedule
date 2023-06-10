@@ -61,15 +61,6 @@ export class MockDataProvider implements DataProvider {
         },
         {
           id: 0,
-          name: "Future Games Show",
-          date: new Date("2023-06-10T17:00:00+00:00"),
-          description: `Ежегодное мероприятие от издания Gamesradar. Анонсы, интервью с разработчиками и геймплейные кадры ожидаемых игр.`,
-          rumors: [],
-          twitchLink: "https://www.twitch.tv/gamesradar",
-          youtubeLink: "https://www.youtube.com/user/GamesRadar",
-        },
-        {
-          id: 0,
           name: "Ubisoft Forward",
           date: new Date("2023-06-12T17:00:00+00:00"),
           description: `Выставка от Ubisoft возвращается, чтобы поделиться новостями о уже анонсированных проектах и дать новые анонсы. Beyond Good and Evil 2 NEVER.`,
@@ -120,15 +111,6 @@ export class MockDataProvider implements DataProvider {
           description: `Capcom в рамках SGF провёдет получасовую трансляцию, на которой как минимум точно покажут Dragon’s Dogma 2, Exoprimal и Ghost Trick.`,
           rumors: [],
           youtubeLink: "https://www.youtube.com/@CapcomUSA",
-        },
-        {
-          id: 0,
-          name: "Wholesome (100) Direct",
-          date: new Date("2023-06-10T16:00:00+00:00"),
-          description: `Онлайн-трансляция о инди от независимых разработчиков и издателей.`,
-          rumors: [],
-          twitchLink: "https://www.twitch.tv/wholesome_games",
-          youtubeLink: "https://www.youtube.com/channel/UCKMkV9T20tUOBqwsi5xh7HA/videos",
         },
       ];
       resolve(events);
