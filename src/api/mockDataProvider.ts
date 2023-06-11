@@ -112,6 +112,14 @@ export class MockDataProvider implements DataProvider {
           rumors: [],
           youtubeLink: "https://www.youtube.com/@CapcomUSA",
         },
+        {
+          id: 0,
+          name: "Annapurna Interactive",
+          date: new Date("2023-06-29T19:00:00+00:00"),
+          description: `Annapurna Interactive обещает показать новые анонсы и больше информации о Silent Hill: Townfall.`,
+          rumors: [],
+          youtubeLink: "https://www.youtube.com/@AnnapurnaInteractive",
+        },
       ];
       resolve(events);
     });
