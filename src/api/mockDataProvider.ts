@@ -6,15 +6,6 @@ export class MockDataProvider implements DataProvider {
       const events: EventData[] = [
         {
           id: 0,
-          name: "Xbox Games Showcase Extended",
-          date: new Date("2023-06-13T17:00:00+00:00"),
-          description: `"Расширенная" игровая презентация от Microsoft, где нам расскажут более подробно о играх, показанных на их прошлой презентации.`,
-          rumors: [],
-          twitchLink: "https://www.twitch.tv/Xbox",
-          youtubeLink: "https://www.youtube.com/user/xbox/hub",
-        },
-        {
-          id: 0,
           name: "THQ Nordic Digital Showcase",
           date: new Date("2023-08-11T19:00:00+00:00"),
           description: `Будет представлена новая информация о Alone in the Dark, Outcast 2, Trine 5 и других неуказанных играх, а также несколько новых анонсов.`,
