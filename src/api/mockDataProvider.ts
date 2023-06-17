@@ -34,14 +34,6 @@ export class MockDataProvider implements DataProvider {
         },
         {
           id: 0,
-          name: "RGG Summit",
-          date: new Date("2023-06-16T03:00:00+00:00"),
-          description: `Команда поделится информацией о своих грядущих играх или анонсирует проекты, о которых прежде не рассказывала. Стоит ожидать больше информации о Like a Dragon 8.`,
-          rumors: [],
-          youtubeLink: "https://www.youtube.com/watch?v=UG4HE9Q3wek",
-        },
-        {
-          id: 0,
           name: "Annapurna Interactive",
           date: new Date("2023-06-29T19:00:00+00:00"),
           description: `Annapurna Interactive обещает показать новые анонсы и больше информации о Silent Hill: Townfall.`,
