@@ -40,14 +40,6 @@ export class MockDataProvider implements DataProvider {
           rumors: [],
           youtubeLink: "https://www.youtube.com/@AnnapurnaInteractive",
         },
-        {
-          id: 0,
-          name: "Nintendo Direct",
-          date: new Date("2023-06-21T14:00:00+00:00"),
-          description: `В рамках презентации собираются показать тайтлы, выходящие во второй половине 2023-го года. Будут и подробности Pikmin 4 (с возможными подробностями о Metroid Prime 4)`,
-          rumors: [],
-          youtubeLink: "https://www.youtube.com/@NintendoAmerica",
-        },
       ];
       resolve(events);
     });
