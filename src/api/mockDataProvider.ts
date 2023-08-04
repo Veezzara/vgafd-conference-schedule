@@ -32,6 +32,15 @@ export class MockDataProvider implements DataProvider {
           twitchLink: "https://www.twitch.tv/warframe",
           youtubeLink: "https://www.youtube.com/user/playwarframe",
         },
+        {
+          id: 0,
+          name: "Devolver Digital Delayed",
+          date: new Date("2023-08-07T15:00:00+00:00"),
+          description: `Вторая презентация от Devolver Digital за этот год - анонсируют игры на 2024-ый год.`,
+          rumors: [],
+          twitchLink: "https://www.twitch.tv/devolverdigital",
+          youtubeLink: "https://www.youtube.com/@DevolverDigital",
+        },
       ];
       resolve(events);
     });
